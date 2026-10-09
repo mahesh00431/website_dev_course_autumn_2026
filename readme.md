@@ -1,0 +1,1 @@
+This repo contains all the exercises of Course Website Development
