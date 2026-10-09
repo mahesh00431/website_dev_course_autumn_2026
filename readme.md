@@ -1,1 +1,1 @@
-This repo contains all the exercises of Course Website Development
+This repo contains all the exercises of  Website Development Course Autumn 2026
