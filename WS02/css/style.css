@@ -1,40 +1,40 @@
 .intro-box {
     padding: 20px;
-    margin: 10px;
+    margin: 10px auto;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-
     }
     
     .intro-box h2 {
-      color: darkblue;
+      color: #2D3748;
     }
     
     .intro-box
-p {
-      color: blue;
+    p {
+      color: #1a1a1a;
     }
     
     body {
-      background-color: lightgray;
+      background-color: #f0f0f0;
+      padding: 20px;
     }
     
     h1 {
       font-size: 2em;
     }
-table {
+    table {
       width: 50%;
       border-collapse: collapse;
     }
-    
+   
     th, td {
-      border: 1px solid #ddd;
+      border: 1px solid #0e0e0e;
       padding: 8px;
       text-align: left;
     }
     
     th {
-      background-color: #f2f2f2;
+      background-color: #b1aeae;
     }
     
     form {
@@ -52,6 +52,7 @@ table {
       border: 1px solid #ddd;
       border-radius: 4px;
       width: 300px;
+      margin-bottom: 10px;
     }
     
     input[type="submit"] {
@@ -66,4 +67,11 @@ table {
     
     input[type="submit"]:hover {
       background-color: #45a049;
+    }
+    a{
+      color: #1a0dab;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
