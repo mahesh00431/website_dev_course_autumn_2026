@@ -78,11 +78,11 @@ h2 {
   color: #0f172a;
 }
 
-/* Module 1 & 2: About Layout & Figure Styling */
+/* Module 1 & 2: About Layout & Full Uncropped Figure Styling */
 .about-layout {
   display: flex;
   flex-direction: row-reverse;
-  gap: 24px;
+  gap: 28px;
   align-items: center;
 }
 
@@ -101,7 +101,7 @@ h2 {
 }
 
 .profile-card img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 6px;
   display: block;
@@ -183,22 +183,25 @@ tbody tr:nth-child(even) {
   color: #0369a1;
 }
 
-/* Module 2 & 3: Contact Form Styling */
+/* Module 2 & 3: Polished Contact Form Styling */
 .contact-form {
   background-color: white;
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  padding: 24px;
+  padding: 28px;
   max-width: 600px;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.05);
 }
 
 .form-group {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .form-group label {
   display: block;
   font-weight: bold;
+  font-size: 0.95rem;
+  color: var(--primary-dark);
   margin-bottom: 6px;
 }
 
@@ -206,18 +209,41 @@ tbody tr:nth-child(even) {
 .form-group select,
 .form-group textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
+  padding: 12px 14px;
+  background-color: #f8fafc;
+  border: 1.5px solid var(--border-color);
+  border-radius: 6px;
   font-family: inherit;
   font-size: 1rem;
+  color: var(--text-main);
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #94a3b8;
+  opacity: 1;
+}
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+  border-color: #94a3b8;
+  background-color: #ffffff;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  outline: 2px solid var(--accent-blue);
+  outline: none;
+  background-color: #ffffff;
   border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 110px;
 }
 
 .btn-submit {
@@ -227,12 +253,17 @@ tbody tr:nth-child(even) {
   padding: 12px 24px;
   font-size: 1rem;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .btn-submit:hover {
   background-color: #0369a1;
+}
+
+.btn-submit:active {
+  transform: translateY(1px);
 }
 
 /* Workshop 4 (Task 4): Media Queries */
@@ -249,7 +280,15 @@ tbody tr:nth-child(even) {
     background-color: lightcoral;
   }
 
-  .about-layout,
+  .about-layout {
+    flex-direction: column-reverse;
+  }
+
+  .profile-card {
+    max-width: 280px;
+    width: 100%;
+  }
+
   .flex-container,
   nav ul {
     flex-direction: column;
