@@ -1,2 +1,2 @@
-# This is Website Development Workshop folder
+# This is Website Development WS04 folder
 
