@@ -83,7 +83,7 @@ h2 {
 .about-layout {
   display: flex;
   flex-direction: row-reverse;
-  gap: 28px;
+  gap: 24px;
   align-items: center;
 }
 
