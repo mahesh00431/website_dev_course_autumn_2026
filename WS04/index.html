@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop 4: Page Layout Techniques</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+    <header class="site-header">
+        <h1>Mahesh Silwal</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies (Grid)</a></li>
+                <li><a href="#courses">Courses (Flexbox)</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="responsive-box">
+            Resize the window to see the responsive layout effect
+        </div>
+
+        <section id="about" class="intro-box">
+            <div class="animation-box"></div>
+            <h2>Greetings Visitors!</h2>
+            <div class="about-layout">
+                <img src="images/Mahesh.jpg" alt="Mahesh Silwal" class="small-image filter-image">
+                <div>
+                    <p>Hi, I'm Mahesh Silwal—an Information Technology student at Laurea University of Applied Sciences (Leppävaara campus) living in Espoo, Finland. Originally from Kathmandu, Nepal, I focus on building clean, responsive websites and exploring modern software development. Take a look around to see my current projects, technical interests, and how to connect.</p>
+                    <blockquote class="quote">
+                        Code is like humor. When you have to explain it, it’s bad.
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h2>My Hobbies &amp; Interests</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Reading Books</h3>
+                    <p>Exploring fiction, technology, and personal growth.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Video Games</h3>
+                    <p>Unwinding with story-driven and strategy games.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Traveling</h3>
+                    <p>Discovering new cities, cultures, and landscapes.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Photography</h3>
+                    <p>Capturing candid street scenes and nature shots.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Cooking</h3>
+                    <p>Experimenting with Nepali dishes and new recipes.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Music &amp; Fitness</h3>
+                    <p>Attending live concerts and staying active.</p>
+                </div>
+            </div>
+
+            <h3>Favorite Website</h3>
+            <p><a href="https://www.phoronix.com/" target="_blank" rel="noopener noreferrer">Phoronix</a> — A go-to resource for Linux news, open-source software updates, and hardware performance benchmarks.</p>
+        </section>
+
+        <section id="courses">
+            <h2>My Ongoing Courses</h2>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>Web Site Development</h3>
+                    <p>Instructor: Outi Grotenfelt</p>
+                </div>
+                <div class="box">
+                    <h3>Basics of Digital Service</h3>
+                    <p>Instructor: Kalpana Rathod</p>
+                </div>
+                <div class="box">
+                    <h3>Project Management &amp; Communication</h3>
+                    <p>Instructor: Sebastian King</p>
+                </div>
+            </div>
+
+            <h3 class="course-list-heading">Ongoing Courses (Laurea UAS — Fall 2026)</h3>
+            <ul class="pseudo-list">
+                <li><strong>Web Site Development</strong> (ND00CC68-3004) — Instructor: Outi Grotenfelt</li>
+                <li><strong>Basics of ICT Infrastructure and Cloud Services</strong> (ND00CC67-3005) — Instructor: Outi Grotenfelt</li>
+                <li><strong>Basics of Digital Service</strong> (ND00CC66-3004) — Instructor: Kalpana Rathod</li>
+                <li><strong>Business Environments</strong> (ND00CC63-3007) — Instructor: Anu Peltola</li>
+                <li><strong>Project Management and Communication</strong> (YY00BW73-3027) — Instructor: Sebastian King</li>
+                <li><strong>Building One's Competence Identity</strong> (YY00CC95-3020) — Instructor: Arvind Sharma</li>
+                <li><strong>Introduction to Finnish Language and Culture (Level A1.2)</strong> (YY00CC58-3011) — Instructor: Outi Smedlund</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                <input type="submit" value="Submit">
+            </form>
+
+            <div class="social-links">
+                <a href="mailto:maheshsilwal52@gmail.com" class="transition-button">Email Me</a>
+                <a href="https://github.com/mahesh00431" target="_blank" rel="noopener noreferrer" class="transition-button">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Copyright &copy; 2026 Mahesh Silwal | Espoo, Finland</p>
+    </footer>
+
+</body>
+</html>
