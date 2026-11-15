@@ -1,0 +1,136 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fafafa;
+}
+
+header, footer {
+  background-color: #1e293b;
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.25rem;
+}
+
+header p {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+nav a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+  color: #0f172a;
+}
+
+/* Task 2: Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.grid-item {
+  background-color: #e6f7ed;
+  border: 1px solid #b7e4c7;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: left;
+}
+
+.grid-item h3 {
+  margin-top: 0;
+  color: #1b4332;
+}
+
+/* Task 3: Flexbox Layout */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 15px;
+}
+
+.box {
+  flex: 1;
+  background-color: #e0f2fe;
+  border: 1px solid #bae6fd;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+}
+
+.box h3 {
+  margin-top: 0;
+  color: #0369a1;
+}
+
+/* Task 4: Media Queries */
+.responsive-box {
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: lightcoral;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: lightseagreen;
+  }
+}

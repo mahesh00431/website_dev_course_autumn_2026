@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WS00 Exercise</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahesh Silwal | IT &amp; Web Development Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to WS00 Exercise</h1>
-    <p>This is a simple HTML page for the WS00 exercise.</p>
+
+  <!-- Task 1: Semantic Header & Navigation -->
+  <header>
+    <h1>Mahesh Silwal</h1>
+    <p>Business Information Technology Student &amp; Aspiring Web Developer</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Studies &amp; Projects</a></li>
+        <li><a href="#experience">Background &amp; Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Task 1: Semantic About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Mahesh, currently pursuing a Bachelor's degree in Business Information 
+        Technology at Laurea University of Applied Sciences in Finland. With a background in 
+        retail leadership and digital operations, I focus on building clean, accessible, and 
+        user-centered web applications.
+      </p>
+    </section>
+
+    <!-- Task 2: Grid Layout -> Studies, Projects & Technical Interests -->
+    <section id="projects">
+      <h2>Studies, Projects &amp; Interests</h2>
+      <div class="grid-container">
+        <article class="grid-item">
+          <h3>Web Site Development</h3>
+          <p>Building responsive, W3C-validated pages using semantic HTML5, CSS Grid, and Flexbox.</p>
+        </article>
+        <article class="grid-item">
+          <h3>Basics of Digital Service</h3>
+          <p>Designing user-centered digital services and structured web prototypes.</p>
+        </article>
+        <article class="grid-item">
+          <h3>Project Management</h3>
+          <p>Applying agile communication, milestone planning, and team coordination workflows.</p>
+        </article>
+        <article class="grid-item">
+          <h3>Green Software Engineering</h3>
+          <p>Exploring carbon-aware computing schedules and energy-efficient CI/CD pipelines.</p>
+        </article>
+        <article class="grid-item">
+          <h3>Linux &amp; Open Source</h3>
+          <p>Following hardware benchmarks, system performance, and open-source software ecosystems.</p>
+        </article>
+        <article class="grid-item">
+          <h3>Photography &amp; Travel</h3>
+          <p>Capturing urban architecture and Nordic landscapes around Helsinki and Espoo.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Task 3: Flexbox Layout -> Experience & Contact Highlights -->
+    <section id="experience">
+      <h2>Experience &amp; Contact</h2>
+      <div class="flex-container">
+        <div class="box">
+          <h3>Laurea UAS</h3>
+          <p>B.Sc. in Business Information Technology (Leppävaara Campus)</p>
+        </div>
+        <div class="box">
+          <h3>CG Digital &amp; Axil Creations</h3>
+          <p>Former Showroom Incharge &amp; digital team experience in consumer electronics</p>
+        </div>
+        <div class="box">
+          <h3>Location &amp; Connect</h3>
+          <p>Based in Helsinki, Finland &bull; Open to IT &amp; web internships</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task 4: Media Queries -> Responsive Status Banner -->
+    <section>
+      <h2>Current Status</h2>
+      <div class="responsive-box">
+        Currently studying Web Development in Helsinki — resize the browser window to test the responsive breakpoint!
+      </div>
+    </section>
+  </main>
+
+  <!-- Task 1: Semantic Footer -->
+  <footer>
+    <p>&copy; 2026 Mahesh Silwal. Built with Semantic HTML, CSS Grid &amp; Flexbox.</p>
+  </footer>
+
 </body>
 </html>
