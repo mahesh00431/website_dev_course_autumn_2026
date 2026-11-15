@@ -81,6 +81,7 @@ h2 {
 /* Module 1 & 2: About Layout & Figure Styling */
 .about-layout {
   display: flex;
+  flex-direction: row-reverse;
   gap: 24px;
   align-items: center;
 }
