@@ -79,7 +79,6 @@ h2 {
 }
 
 /* Module 1 & 2: About Layout & Figure Styling */
-/* Desktop: Picture on the left, text on the right */
 .about-layout {
   display: flex;
   flex-direction: row-reverse;
@@ -94,7 +93,7 @@ h2 {
 .profile-card {
   flex: 1;
   margin: 0;
-  background-color: #ffffff;
+  background-color: white;
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 12px;
@@ -103,18 +102,17 @@ h2 {
 
 .profile-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  object-position: center top;
+  aspect-ratio: 4 / 3;       /* Forces a consistent 4:3 shape (use 1 / 1 for square) */
+  object-fit: cover;         /* Crops cleanly to fill the box without distortion */
+  object-position: center top; /* Keeps faces/heads centered near the top */
   border-radius: 6px;
-  display: block;
+  display: block;  
 }
 
-/* Mobile (below 600px): Stack vertically */
-@media (max-width: 600px) {
-  .about-layout {
-    flex-direction: column;
-  }
+.profile-card figcaption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #475569;
 }
 
 /* Workshop 4 (Task 2): Grid Layout */
