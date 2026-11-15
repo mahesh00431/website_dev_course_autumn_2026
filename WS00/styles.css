@@ -101,12 +101,11 @@ h2 {
 }
 
 .profile-card img {
-  width: 100%;
-  aspect-ratio: 4 / 3;       /* Forces a consistent 4:3 shape (use 1 / 1 for square) */
-  object-fit: cover;         /* Crops cleanly to fill the box without distortion */
-  object-position: center top; /* Keeps faces/heads centered near the top */
+  max-width: 100%;
+  height: auto;
   border-radius: 6px;
-  display: block;  
+  display: block;
+  margin: 0 auto;
 }
 
 .profile-card figcaption {
@@ -185,99 +184,57 @@ tbody tr:nth-child(even) {
 }
 
 /* Module 2 & 3: Contact Form Styling */
-/* Module 2 & 3: Polished Contact Form & Text Boxes */
 .contact-form {
-  background-color: #ffffff;
+  background-color: white;
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  padding: 28px;
+  padding: 24px;
   max-width: 600px;
-  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.05);
 }
 
 .form-group {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .form-group label {
   display: block;
   font-weight: bold;
-  font-size: 0.95rem;
-  color: var(--primary-dark);
   margin-bottom: 6px;
 }
 
-/* Text Boxes, Dropdown & Textarea */
-.form-group input[type="text"],
-.form-group input[type="email"],
+.form-group input,
 .form-group select,
 .form-group textarea {
   width: 100%;
-  padding: 12px 14px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
   font-family: inherit;
   font-size: 1rem;
-  color: var(--text-main);
-  background-color: #f8fafc;
-  border: 1.5px solid var(--border-color);
-  border-radius: 6px;
-  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Placeholder Text Styling */
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: #94a3b8;
-  opacity: 1;
-}
-
-/* Hover State */
-.form-group input[type="text"]:hover,
-.form-group input[type="email"]:hover,
-.form-group select:hover,
-.form-group textarea:hover {
-  border-color: #94a3b8;
-  background-color: #ffffff;
-}
-
-/* Keyboard & Click Focus State (Accessibility Best Practice) */
-.form-group input[type="text"]:focus,
-.form-group input[type="email"]:focus,
+.form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  outline: none;
-  background-color: #ffffff;
+  outline: 2px solid var(--accent-blue);
   border-color: var(--accent-blue);
-  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.2);
 }
 
-/* Prevent horizontal stretching on the textarea */
-.form-group textarea {
-  resize: vertical;
-  min-height: 110px;
-  line-height: 1.5;
-}
-
-/* Submit Button */
 .btn-submit {
-  display: inline-block;
   background-color: var(--accent-blue);
-  color: #ffffff;
+  color: white;
   border: none;
   padding: 12px 24px;
   font-size: 1rem;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .btn-submit:hover {
   background-color: #0369a1;
 }
 
-.btn-submit:active {
-  transform: translateY(1px);
-}
 /* Workshop 4 (Task 4): Media Queries */
 .responsive-box {
   padding: 20px;
