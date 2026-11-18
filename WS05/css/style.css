@@ -1,0 +1,379 @@
+/* =========================================
+   1. Base Reset & Custom Properties
+   ========================================= */
+:root {
+  --bg-page: #f8fafc;
+  --bg-card: #ffffff;
+  --primary: #0f172a;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* =========================================
+   2. Header & Task 4: Responsive Navigation
+   ========================================= */
+header {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 2rem 1.5rem 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+header p {
+  color: #cbd5e1;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.responsive-nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: 1px solid #334155;
+  padding-top: 1rem;
+}
+
+/* Hide the checkbox input everywhere */
+.responsive-nav .menu-checkbox {
+  display: none;
+}
+
+/* Hide the menu button label on larger screens */
+.responsive-nav .menu-toggle {
+  display: none;
+  background-color: var(--accent);
+  color: #ffffff;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.responsive-nav .menu-toggle:hover {
+  background-color: var(--accent-hover);
+}
+
+.responsive-nav .nav-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.responsive-nav .nav-list a {
+  color: #f1f5f9;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.35rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.responsive-nav .nav-list a:hover {
+  background-color: #1e293b;
+  color: #60a5fa;
+}
+
+/* =========================================
+   3. Main Layout & Sections
+   ========================================= */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+}
+
+section h3 {
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* =========================================
+   4. Task 1 & Task 2: About Section
+   ========================================= */
+.responsive-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+.profile-card {
+  max-width: 280px;
+  text-align: center;
+  background-color: var(--bg-page);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+/* Task 2: Responsive Image */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  margin: 0 auto 0.75rem;
+}
+
+.profile-card figcaption {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+.about-text ul {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* =========================================
+   5. Projects Section (CSS Grid)
+   ========================================= */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.grid-item {
+  background-color: var(--bg-page);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.grid-item p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* =========================================
+   6. Course Roadmap (Responsive Table)
+   ========================================= */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+thead {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--bg-page);
+}
+
+/* =========================================
+   7. Experience Section (Flexbox)
+   ========================================= */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.box {
+  flex: 1 1 250px;
+  background-color: var(--bg-page);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+/* =========================================
+   8. Contact Form
+   ========================================= */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 600px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--accent);
+  border-color: transparent;
+}
+
+.contact-form button {
+  background-color: var(--accent);
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent-hover);
+}
+
+/* =========================================
+   9. Task 3: Media Query Breakpoint Box
+   ========================================= */
+.media-query-box {
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 6px;
+  color: #0f172a;
+}
+
+@media (min-width: 601px) {
+  .media-query-box {
+    background-color: lightblue;
+  }
+}
+
+/* =========================================
+   10. Footer
+   ========================================= */
+footer {
+  background-color: var(--primary);
+  color: #cbd5e1;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* =========================================
+   11. Mobile Media Query (max-width: 600px)
+   ========================================= */
+@media (max-width: 600px) {
+  /* Task 1: Stack columns vertically */
+  .column {
+    flex: 100%;
+  }
+
+  .profile-card {
+    max-width: 100%;
+  }
+
+  /* Task 3: Change breakpoint box background */
+  .media-query-box {
+    background-color: lightcoral;
+  }
+
+  /* Task 4: Collapse navigation into toggleable menu */
+  .responsive-nav .menu-toggle {
+    display: block;
+  }
+
+  .responsive-nav .nav-list {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .responsive-nav .menu-checkbox:checked ~ .nav-list {
+    display: flex;
+  }
+
+  .responsive-nav .nav-list a {
+    display: block;
+    padding: 0.5rem;
+    background-color: #1e293b;
+  }
+}
